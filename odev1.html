@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>Title</title>
+    <!-- Turkce karakter -->
+    <meta charset="utf-8">
+
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- seo -->
+    <meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,javase" />
+    <meta name="description" content="1_hafta_4_gun_odev"/>
+    <meta name="author" content="Emre YILDIZ" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- react libraries -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <title>To Do List</title>
+  </head>
+        <style>
+            .container{
+                   /*container kısmını sayfanın ortasına ayarladım.  */
+                position: absolute;
+                width: 700px;
+                height: 250px;
+                padding: 20px auto;
+                top: 50%;
+                left: 50%;
+                margin-left: -350px;
+                margin-top: -125px;
+                border: 20px red;
+            }
+            .box{
+                /* container in içindeki kutunun sınırlarını çizdim */
+              border:10px solid red;
+            }
+            input[type="text"]{
+                /*ilk kısımına yazılacak olan textbox'ı genişlettim  */
+                width: 91%;
+            }
+            .texts
+            {
+                /* to-do-listteki textler için ortak sınıf oluşturup nasıl görünmesi istediğimi ayarladım */
+                font-size: large;
+                background-color: blue;
+                color: cornsilk;
+            }
+            
+        </style>
+        
+  <body>
+    <div class="container"> 
+            <div class="box">
+                <!-- altındaki textlerden uzaklaşması için 5px margin bottom kullandım -->
+                <div style="margin-bottom: 15px;"> <input type="text"placeholder="What do you need to do today?"> 
+                    <button type="button" class="btn btn-warning  float-end" >Add</button>
+                 </div>
+                        <div class="texts">Go to the hospital
+                            <button type="button" class="btn btn-danger float-end"><i class="fas fa-trash"></i></button>
+                        </div><br>
+                        <div class="texts">Buy some food
+                            <button type="button" class="btn btn-danger float-end"><i class="fas fa-trash"></i></button></div><br>
+                        
+                        <div class="texts">Check the mail box
+                            <button type="button" class="btn btn-danger float-end"><i class="fas fa-trash"></i></button>
+                        </div><br>               
+                        <div class="texts">Go for a walk
+                            <button type="button" class="btn btn-danger float-end"><i class="fas fa-trash"></i></button>
+                        </div><br>
+            </div>
+</div>
+  </body>
+</html>
